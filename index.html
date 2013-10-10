@@ -4,37 +4,69 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
         <title>Mitch Lustig - Performer</title>
-        <link rel="stylesheet" href="stylesheets/styles.css">
-        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="javascripts/main.js"></script>
         <!--[if lt IE 9]>
           <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap_cerulean.css" rel="stylesheet" media="screen">
     </head>
     <body>
-        <header>
-            <h1>Mitch Lustig</h1>
-            <p>Cyr wheel - Fire Performance - Lasso - Juggler</p>
-        </header>
-        <!--menu-->
-        <div id="banner">
-            <a href="index.html" class="button fork"><strong>Home</strong></a>
-            <a href="gallery.html" class="button fork"><strong>Gallery</strong></a>
-        </div><!-- end banner -->
-
-        <div class="wrapper">
-            <nav>
-                <ul></ul>
-            </nav>
-            <section>
-            </section>
-      <footer>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        <!--bootstrap-->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <div class="navbar-static-top">
+            <div class="well">
+                <header>
+                    <h1 class="text-center"><a href="#home">Mitch Lustig</a></h1>
+                    <p class="text-center">Cyr wheel - Fire Performance - Lasso - Juggler</p>
+                </header>
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <div class="panel panel-default" >
+                <div class="panel-heading">
+                    <ul class="nav nav-justified" id="mainNav">
+                      <li><a href="#home" data-toggle="tab">Home</a></li>
+                      <li><a href="#gallery" data-toggle="tab">Gallery</a></li>
+                      <li><a href="#bio" data-toggle="tab">Bio</a></li>
+                      <li><a href="#contact" data-toggle="tab">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">  
+                    <div id="home" class="tab-pane active">home</div>
+                    <div id="gallery" class="tab-pane">gallery</div>
+                    <div id="contact" class="tab-pane">contact</div>
+                    
+                    <div id="bio" class="tab-pane">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/photo_1.jpg" alt="fur cowboy"/>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Mitch is a multi-faceted showman specializing in Cyr Wheel, Fire Arts and Juggling. A born entertainer, he has entertained crowds at shows all across the United States, with the highlights including the Flow Show, PEX Summerfest, Bindlestiff Open Stage and with the great Gowanus Circus. In addition to performing, Mitch is a gifted teacher, repeatedly asked to run festival workshops at Firedrum, Wildfire, The Floasis and Burning Man.  He also runs a Youtube tutorial series teaching Cyr Wheel and Contact Staff.</p>
+                                <p>Mitch graduated with a BS from Brooklyn College in Computer SCI. After transitioning from the digital space to the circus space, Mitch is embarking on the next step in his life, and sharing his gift of showmanship with the world.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navbar-fixed-bottom">
+            <div class="container">
+                <footer class="well">
+                    Mitch Lustig <br>
+                    718-300-9145 <br>
+                    <a href="mailto:MitchLustCircus@gmail.com">MitchLustCircus@gmail.com</a>
+                </footer>
+            </div>
+        </div>
+    </body>
 </html>
