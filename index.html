@@ -18,7 +18,7 @@
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         
-        <div class="navbar-static-top">
+        <div class="navbar-fixed-top">
             <div class="well">
                 <header>
                     <h1 class="text-center"><a href="#home">Mitch Lustig</a></h1>
@@ -28,29 +28,32 @@
         </div>
         
         
-        <div class="container">
+        <div class="container" style="margin-top: 160px;">
             <div class="panel panel-default" >
                 <div class="panel-heading">
                     <ul class="nav nav-justified" id="mainNav">
-                      <li><a href="#home" data-toggle="tab">Home</a></li>
-                      <li><a href="#gallery" data-toggle="tab">Gallery</a></li>
-                      <li><a href="#bio" data-toggle="tab">Bio</a></li>
-                      <li><a href="#contact" data-toggle="tab">Contact</a></li>
+                        <li><a href="#home" data-toggle="tab" style="font-size: 25px; padding: 0px;">Home</a></li>
+                        <li><a href="#gallery" data-toggle="tab" style="font-size: 25px; padding: 0px;">Gallery</a></li>
+                        <li><a href="#bio" data-toggle="tab" style="font-size: 25px; padding: 0px;">Bio</a></li>
+                        <li><a href="#contact" data-toggle="tab" style="font-size: 25px; padding: 0px;">Contact</a></li>
                     </ul>
                 </div>
                 <div class="tab-content">  
                     <div id="home" class="tab-pane active">home</div>
-                    <div id="gallery" class="tab-pane">gallery</div>
+                    <div id="gallery" class="tab-pane">
+                        <iframe style="padding: 20px;" width="560" height="315" src="http://www.youtube.com/embed/kZT7_gYtEpM?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
                     <div id="contact" class="tab-pane">contact</div>
                     
                     <div id="bio" class="tab-pane">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="img/photo_1.jpg" alt="fur cowboy"/>
+                                <img src="img/photo_1.jpg" alt="fur cowboy" style="width: 100%; padding: 20px;"/>
                             </div>
-                            <div class="col-md-8">
-                                <p>Mitch is a multi-faceted showman specializing in Cyr Wheel, Fire Arts and Juggling. A born entertainer, he has entertained crowds at shows all across the United States, with the highlights including the Flow Show, PEX Summerfest, Bindlestiff Open Stage and with the great Gowanus Circus. In addition to performing, Mitch is a gifted teacher, repeatedly asked to run festival workshops at Firedrum, Wildfire, The Floasis and Burning Man.  He also runs a Youtube tutorial series teaching Cyr Wheel and Contact Staff.</p>
-                                <p>Mitch graduated with a BS from Brooklyn College in Computer SCI. After transitioning from the digital space to the circus space, Mitch is embarking on the next step in his life, and sharing his gift of showmanship with the world.</p>
+                            <div class="col-md-8" style="padding-top: 20px; padding-right: 40px;">
+                                <h1 class="page-header">Biography</h1>
+                                <p style="font-size: 18px">Mitch is a multi-faceted showman specializing in Cyr Wheel, Fire Arts and Juggling. A born entertainer, he has entertained crowds at shows all across the United States, with the highlights including the Flow Show, PEX Summerfest, Bindlestiff Open Stage and with the great Gowanus Circus. In addition to performing, Mitch is a gifted teacher, repeatedly asked to run festival workshops at Firedrum, Wildfire, The Floasis and Burning Man.  He also runs a Youtube tutorial series teaching Cyr Wheel and Contact Staff.</p>
+                                <p style="font-size: 18px">Mitch graduated with a BS from Brooklyn College in Computer SCI. After transitioning from the digital space to the circus space, Mitch is embarking on the next step in his life, and sharing his gift of showmanship with the world.</p>
                             </div>
                         </div>
                         
@@ -59,7 +62,7 @@
             </div>
         </div>
         
-        <div class="navbar-fixed-bottom">
+        <div class="navbar-static-bottom">
             <div class="container">
                 <footer class="well">
                     Mitch Lustig <br>
