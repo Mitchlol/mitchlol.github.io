@@ -1,6 +1,6 @@
 {
     "name": "OpenPixelPoi",
-    "version": "2025.4.16",
+    "version": "2025.11.22",
     "funding_url": "https://github.com/Mitchlol/Open-Pixel-Poi/blob/main/README.md",
     "new_install_prompt_erase": true,
     "builds": [
