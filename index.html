@@ -78,9 +78,31 @@
                                 </p>
                                 <h3 class="header">Step 3: Flash Firmware</h3>
                                 <p style="font-size: 18px">
-                                    Use the button below and follow prompts. It will install the most recent firmware I've put on this site. <br>
+                                    Use the buttons below and follow prompts.<br>
                                 </p>
-                                <esp-web-install-button class="btn" manifest="opp_firmware/manifest.json"></esp-web-install-button>
+                                <h4 class="header">Latest Firmware - for app version 2.0</h4>
+                                <p>
+                                    Upgrading from legacy firmware will erase all patterns.<br>
+                                    All of the firmwares are actually the same code, just preconfigured differently.<br>
+                                    You can override all the preconfigured settings using the APP, when setting are overridden, changing firmwares wont reset them, unless you do a full erase.<br>
+                                    Flashing firmware for the wrong PCB version can permanently damage your Poi.<br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5 class="header">PCB V3.0.0 25-Pixels</h5>
+                                        <esp-web-install-button class="btn" manifest=""></esp-web-install-button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 class="header">PCB V3.0.0 55-Pixels</h5>
+                                        <esp-web-install-button class="btn" manifest=""></esp-web-install-button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 class="header">PCB V2.2.1 20-Pixels</h5>
+                                        <esp-web-install-button class="btn" manifest=""></esp-web-install-button>
+                                    </div>
+                                </div>
+                                <h4 class="header">Legacy Firmware - for Hardware 2.2.1 & App version 1.0</h4>
+                                <esp-web-install-button class="btn" manifest="opp_firmware/2025.11.22/manifest.json"></esp-web-install-button>
                                 <h3 class="header">Step 4: Wait</h3>
                                 <p style="font-size: 18px">
                                     Sometimes it takes up to 30 seconds for the poi to reset. You can wait, reset manually, or open the terminal page's reset button.<br>
