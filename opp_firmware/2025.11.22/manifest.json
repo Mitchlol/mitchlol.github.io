@@ -2,7 +2,7 @@
     "name": "OpenPixelPoi",
     "version": "2025.11.22",
     "funding_url": "https://github.com/Mitchlol/Open-Pixel-Poi/blob/main/README.md",
-    "new_install_prompt_erase": true,
+    "new_install_prompt_erase": false,
     "builds": [
       {
         "chipFamily": "ESP32-C3",

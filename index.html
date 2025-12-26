@@ -68,8 +68,8 @@
                                     Connect your controller to your computer via usb-c. <br>
                                     <ul>
                                         <li><p style="font-size: 18px">The pixel poi must be turned on (not sleeping).</p></li>
-                                        <li><p style="font-size: 18px">This will not work properly without a battery, it seems fine, but wont flash. (I don't know why tbh).</p></li>
-                                        <li><p style="font-size: 18px">Brand new, never flashed controllers with no firmware will keep disconnecting. This is normal, and this tool wont work, use platformio.</p></li>
+                                        <li><p style="font-size: 18px">The pixel poi must have a battery connected.</p></li>
+                                        <li><p style="font-size: 18px">Controllers with no firmware will keep disconnecting. You must enter bootloader mode, or use platformio to flash.</p></li>
                                     </ul>
                                     <h5 class="header">Windows</h5>
                                     If the right driver is installed, you will see your controller show up in "Device Manager" under "Universal Serial Bus Drivers" as a "USB JTAG/serial debug unit".
@@ -77,21 +77,21 @@
                                     If you use linux, you can figure out a driver 😛
                                 </p>
                                 <h3 class="header">Step 3: Flash Firmware</h3>
-                                <p style="font-size: 18px">
-                                    Use the buttons below and follow prompts.<br>
-                                </p>
-                                <p>
-                                    Flashing firmware for the wrong PCB version can permanently damage your Poi. Check out the Firmware config wiki for more info<br>
-                                </p>
+                                <div class="alert alert-warning" role="alert">
+                                   Flashing firmware here does a full erase of your patterns & settings.
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                   Flashing firmware for the wrong PCB version can permanently damage your Poi.
+                                </div>
                                 <h4 class="header">Latest Firmware - For app 2.X</h4>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <h5 class="header">PCB V3.0.0 25-Pixels</h5>
-                                        <esp-web-install-button class="btn" manifest=""></esp-web-install-button>
+                                        <esp-web-install-button class="btn" manifest="opp_firmware/2025.12.26/3.0.0-25px/manifest.json"></esp-web-install-button>
                                     </div>
                                     <div class="col-md-4">
                                         <h5 class="header">PCB V3.0.0 55-Pixels</h5>
-                                        <esp-web-install-button class="btn" manifest=""></esp-web-install-button>
+                                        <esp-web-install-button class="btn" manifest="opp_firmware/2025.12.26/3.0.0-55px/manifest.json"></esp-web-install-button>
                                     </div>
                                     <div class="col-md-4">
                                         <h5 class="header">PCB V2.2.1 20-Pixels</h5>
@@ -107,7 +107,7 @@
                                 </div>
                                 <h3 class="header">Step 4: Wait</h3>
                                 <p style="font-size: 18px">
-                                    Sometimes it takes up to 30 seconds for the poi to reset. You can wait, reset manually, or open the terminal page's reset button.<br>
+                                    Sometimes it takes up to a minute for things to start moving on a fresh install.<br>
                                 </p>
                                </div>
                         </div>
